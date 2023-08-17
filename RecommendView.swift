@@ -16,7 +16,7 @@ struct RecommendView: View {
             }.padding(5)
             
             ScrollView(.horizontal, showsIndicators: false){
-        
+                
                 HStack{
                     Image("banner 3.1").resizable()
                         .cornerRadius(15)

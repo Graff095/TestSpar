@@ -19,9 +19,9 @@ struct StatusCardView: View {
                     shape.clipShape(Circle()).foregroundColor(.green)
                         .frame(width: 75,height: 75)
                     Image(status.statusImage)
-                            .resizable()
-                            .frame(width: 70,height: 70)
-                            .clipShape(Circle())
+                        .resizable()
+                        .frame(width: 70,height: 70)
+                        .clipShape(Circle())
                 } else {
                     shape.clipShape(Circle()).foregroundColor(.gray
                     )

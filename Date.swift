@@ -10,7 +10,7 @@ struct StatusDate:Identifiable {
     var id = UUID()
     var statusImage:String
     var statusTitle: String
-
+    
 }
 
 var statusArray = [StatusDate(statusImage: "status 1", statusTitle: "Привилении Мой SPAR"),
@@ -24,7 +24,7 @@ struct ProductDate:Identifiable {
     var image:String
     var price: Int
     var discount: String?
-
+    
 }
 
 var productRecommed = [ProductDate(image: "product 1",  price: 279),
@@ -34,6 +34,6 @@ var productRecommed = [ProductDate(image: "product 1",  price: 279),
 ]
 
 var productSweet = [ProductDate(image: "productSweet 1",  price: 99),
-                       ProductDate(image: "productSweet 2",  price: 99),
-                       ProductDate(image: "productSweet 3",  price: 99)
+                    ProductDate(image: "productSweet 2",  price: 99),
+                    ProductDate(image: "productSweet 3",  price: 99)
 ]

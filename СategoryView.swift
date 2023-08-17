@@ -16,7 +16,7 @@ struct СategoryView: View {
                     .cornerRadius(15)
                     .padding(.horizontal, 3)
                     .frame(width: 120,height: 150)
-        
+                
                 Image("banner 3.2").resizable()
                     .cornerRadius(15)
                     .padding(.horizontal, 3)

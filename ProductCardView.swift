@@ -11,29 +11,28 @@ struct ProductCardView: View {
     var product: ProductDate
     var body: some View {
         ZStack(alignment: .topLeading){
-                VStack{
-                    Image(product.image)
-                        .resizable()
-                        .cornerRadius(15)
-						.frame(width: 120,height: 120.0)
-                        .scaledToFit()
-                    
-                    
-                    HStack{
-                        Text("\(product.price).90 ₽")
-                            .bold()
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "trash.fill")
-                                .padding(10)
-                                .foregroundColor(.white)
-                                .background(.green)
-                                .cornerRadius(20)
-                        }
+            VStack{
+                Image(product.image)
+                    .resizable()
+                    .cornerRadius(15)
+                    .frame(width: 120,height: 120.0)
+                    .scaledToFit()
+                
+                
+                HStack{
+                    Text("\(product.price).90 ₽")
+                        .bold()
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "trash.fill")
+                            .padding(6)
+                            .foregroundColor(.white)
+                            .background(.green)
+                            .cornerRadius(20)
                     }
-                    
                 }
+            }
             if product.discount != nil{
                 Text(product.discount!)
                     .font(.caption)
@@ -45,15 +44,15 @@ struct ProductCardView: View {
                     .clipped()
             }else {
                 Text("")
-                    
-                }
+                
             }
-			.overlay(RoundedRectangle(cornerRadius: 10)
-				.stroke(Color.gray, lineWidth: 1))
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+        }
+        .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.gray, lineWidth: 1))
+        .clipShape(RoundedRectangle(cornerRadius: 10))
         //
-      }
     }
+}
 
 
 struct ProductCardView_Previews: PreviewProvider {
