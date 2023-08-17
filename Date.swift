@@ -23,12 +23,13 @@ struct ProductDate:Identifiable {
     var id = UUID()
     var image:String
     var price: Int
+    var discount: String?
 
 }
 
 var productRecommed = [ProductDate(image: "product 1",  price: 279),
-                       ProductDate(image: "product 2",  price: 279),
-                       ProductDate(image: "product 3",  price: 399),
+                       ProductDate(image: "product 2",  price: 279, discount: "Супер цена"),
+                       ProductDate(image: "product 3",  price: 399, discount: "Удар по ценам"),
                        ProductDate(image: "product 4",  price: 76)
 ]
 
